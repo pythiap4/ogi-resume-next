@@ -149,38 +149,14 @@ export default function Hero() {
           className="mt-16 flex justify-center"
         >
           <div
-            className="w-px h-[60px]"
+            className="w-px h-[60px] scroll-line-anim"
             style={{
               background:
                 "linear-gradient(to bottom, var(--accent), transparent)",
-              animation: "scrollLine 2s ease-in-out infinite",
             }}
           />
         </motion.div>
       </div>
-
-      <style jsx>{`
-        @keyframes scrollLine {
-          0% {
-            opacity: 0;
-            transform: scaleY(0);
-            transform-origin: top;
-          }
-          50% {
-            opacity: 1;
-            transform: scaleY(1);
-            transform-origin: top;
-          }
-          50.01% {
-            transform-origin: bottom;
-          }
-          100% {
-            opacity: 0;
-            transform: scaleY(0);
-            transform-origin: bottom;
-          }
-        }
-      `}</style>
     </section>
   );
 }

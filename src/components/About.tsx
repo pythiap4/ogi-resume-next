@@ -21,7 +21,7 @@ export default function About() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.05 }}
           >
             <p
               className="text-xl md:text-2xl font-medium leading-relaxed mb-5"
@@ -51,7 +51,7 @@ export default function About() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.05 }}
             className="flex flex-col gap-5 p-7 rounded-[20px] border"
             style={{
               background: "var(--bg-card)",

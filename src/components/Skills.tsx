@@ -71,7 +71,7 @@ export default function Skills() {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
+              viewport={{ once: true, amount: 0.05 }}
               className="p-8 rounded-[20px] border transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)]"
               style={{
                 background: "var(--bg-card)",
@@ -93,7 +93,7 @@ export default function Skills() {
                 variants={staggerContainer}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true }}
+                viewport={{ once: true, amount: 0.05 }}
                 className="flex flex-wrap gap-2"
               >
                 {cat.skills.map((skill) => (

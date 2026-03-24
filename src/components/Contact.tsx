@@ -39,7 +39,7 @@ export default function Contact() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.05 }}
             className="text-3xl max-md:text-2xl font-bold mb-10 tracking-[-0.02em]"
           >
             Interested in working together? Let&apos;s talk.
@@ -49,7 +49,7 @@ export default function Contact() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.05 }}
             className="flex flex-col gap-4 items-center mb-8"
           >
             {contactLinks.map((link) => (
@@ -76,7 +76,7 @@ export default function Contact() {
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-60px" }}
+            viewport={{ once: true, amount: 0.05 }}
             className="inline-flex items-center gap-2 text-sm"
             style={{ color: "var(--text-muted)" }}
           >

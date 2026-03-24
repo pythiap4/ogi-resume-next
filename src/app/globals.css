@@ -110,3 +110,40 @@ body {
     color: black;
   }
 }
+
+/* ---------- Fallback: ensure sections visible even before animation ---------- */
+section {
+  will-change: opacity, transform;
+}
+
+/* Ensure page scrolls properly */
+main {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- Hero scroll line animation ---------- */
+@keyframes scrollLine {
+  0% {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  50.01% {
+    transform-origin: bottom;
+  }
+  100% {
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+.scroll-line-anim {
+  animation: scrollLine 2s ease-in-out infinite;
+}

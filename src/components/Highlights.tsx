@@ -43,7 +43,7 @@ export default function Highlights() {
               variants={fadeUp}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, margin: "-60px" }}
+              viewport={{ once: true, amount: 0.05 }}
               className="relative p-9 max-md:p-6 rounded-[20px] border overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-glow)] group"
               style={{
                 background: "var(--bg-card)",

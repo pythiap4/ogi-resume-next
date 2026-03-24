@@ -106,7 +106,7 @@ export default function Experience() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.05 }}
           className="rounded-[20px] border overflow-hidden mb-8 relative transition-all duration-300 hover:shadow-[var(--shadow-md)]"
           style={{
             background: "var(--bg-card)",
@@ -162,7 +162,7 @@ export default function Experience() {
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.05 }}
               className="flex flex-col gap-6"
             >
               {nabAchievements.map((a) => (
@@ -177,7 +177,7 @@ export default function Experience() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.05 }}
           className="rounded-[20px] border overflow-hidden mb-8 transition-all duration-300 hover:shadow-[var(--shadow-md)]"
           style={{
             background: "var(--bg-card)",
@@ -225,7 +225,7 @@ export default function Experience() {
               variants={staggerContainer}
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true }}
+              viewport={{ once: true, amount: 0.05 }}
               className="flex flex-col gap-6"
             >
               {coteAchievements.map((a) => (
@@ -240,7 +240,7 @@ export default function Experience() {
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-60px" }}
+          viewport={{ once: true, amount: 0.05 }}
           className="mt-3 p-6 md:px-9 md:py-7 rounded-[20px] border"
           style={{
             background: "var(--bg-card)",
